@@ -1,14 +1,15 @@
 n = int(input(''))
 ai = input('').split(' ')[:n]
-try:
-    for i in ai:
-        ind = ai.index(i)
-        if ai[ind] > ai[ind+1]:
+ai = [int(i) for i in ai]
+
+for i in ai:
+    pos_i = ai.index(i)
+    if len(ai) == 1:
+        print(0)
+        break
+    elif pos_i != ai[-2]:
+        if ai[pos_i] > ai[pos_i+1]:
             print(-1)
             break
-        else:
-            napolnator = int(ai[-1]) - int(ai[0])
-            print(napolnator)
-            break
-except IndexError:
-    pass
+    print(ai[-1] - ai[0])
+    break
