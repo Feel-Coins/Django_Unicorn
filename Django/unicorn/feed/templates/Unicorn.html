@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <title>Unicorn</title>
+</head>
+<body>
+    <div>
+        <div class="products">
+            <a href="http://127.0.0.1:8000/products">My shoplist</a>
+            <a href="http://127.0.0.1:8000/products/top">Top products</a>
+            <a href="http://127.0.0.1:8000/products/new">New products</a>
+            <div class="profile">
+                <a href={{element}}>{{el_name}}</a>
+            </div>
+        </div>
+        <h1>Welcome to the Unicorn, {{ username }}!</h1>
+        <br>
+        <img src="{% static "images/logo_unicorn.jpg" %}" >
+        <br>
+        <div class="about">
+            <a href="http://127.0.0.1:8000/about/">About Unicorn</a>
+            <a href="http://127.0.0.1:8000/contact">Contact us</a>
+            <br>
+            <t>Unicorn ltd. since 2023. All rights reserved.</t>
+        </div>
+    </div>
+</body>
+</html>
