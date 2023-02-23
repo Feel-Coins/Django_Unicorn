@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}Profile{% endblock title %}
+</head>
+<body>
+        {% block header %}Profile{% endblock header %}
+        {% block content %}
+            <div>
+                <h3>Name: {{ username }}</h3>
+                <h3>Age: {{ age }}</h3>
+                <h3>Cities: {{ cities }}</h3>
+            </div>
+        {% endblock content %}
+    </div>
+</body>
+</html>

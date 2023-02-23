@@ -1,14 +1,34 @@
 <!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Registration</title>
+    {% block title %}Registration{% endblock title %}
 </head>
 <body>
-    <form name="registration" method="get" action="setting">
-        <input type="text" name="username" placeholder="Input your name">
-        <input type="text" name="age" placeholder="Input your age">
-        <button type="submit" name="registration_button" value="main_button">Send</button>
-    </form>
+        {% block header %}Registration{% endblock header %}
+        <br>
+        {% block content %}
+
+            <form name="registration" method="get" action="setting">
+                {% csrf_token %}
+                <input type="text" name="username" placeholder="Input your name">
+                <input type="text" name="age" placeholder="Input your age">
+                <p>Select cities that you've been last year:<br />
+                    <select multiple name="cities">
+                        <option>New York</option>
+                        <option>Novosibirsk</option>
+                        <option>Moscow</option>
+                        <option>Saint Petersburg</option>
+                        <option>Los Angeles</option>
+                    </select>
+                </p>
+
+                <button type="submit" name="registration_button" value="main_button">Send</button>
+            </form>
+
+        {% endblock content %}
+    </div>
 </body>
 </html>

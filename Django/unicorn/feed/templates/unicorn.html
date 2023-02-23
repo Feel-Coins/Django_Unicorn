@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}Unicorn{% endblock title %}
+</head>
+<body>
+        {% block header %}Welcome to the Unicorn, {{ username }}!{% endblock header %}
+        <br>
+        {% block content %}
+            <img height="220" width="200" src="{% static 'images/unicorn_logo.png' %}" >
+            <br>
+        {% endblock content %}
+    </div>
+</body>
+</html>

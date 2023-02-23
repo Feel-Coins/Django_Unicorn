@@ -33,6 +33,6 @@ urlpatterns = [
 
     path('data/', views.data, name='data'),
     path('admin/', admin.site.urls),
-    path('reg/', views.registration)
+    path('reg/', views.registration),
 
 ]
