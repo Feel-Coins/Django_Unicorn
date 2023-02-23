@@ -1,52 +1,68 @@
 body{
-    padding: 20px 20px 20px;
-    margin: 0 auto;
+    margin: 0px 0px;
     font-family: cursive;
-    background-color: white;
-}
-
-h1{
-    color: lightblue;
-    text-align: center;
-    text-shadow: 3px 3px 1px #736;
-}
-
-h2{
-    color: lightblue;
-    text-shadow: 3px 3px 1px black;
-}
-
-h3{
-    color: lightblue;
-    text-shadow: 3px 3px 1px black;
-}
-
-.about{
-    text-align: center;
-}
-
-.profile{
-    float: right;
-}
-
-.about{
-    float: center;
+    background: Lavender;
 }
 
 a{
     text-decoration: none;
-    background: #926;
-    text-shadow: 3px 3px 1px #000;
-    border-radius: 5px;
-    padding: 3px 3px;
-    color:lightblue;
-
-
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
 
-img{
-    display: block;
-    margin: 0 auto;
-    width:450px;
-    img-align: center;
+.image_logo{
+    width: 40px;
+    height: 45px;
+}
+
+.head{
+    background: rgb(255,215,0);
+    background: linear-gradient(90deg, rgba(255,215,0,1) 0%, rgba(255,140,0,1) 20%, rgba(255,20,147,1) 40%, rgba(186,85,211,1) 60%, rgba(65,105,225,1) 80%, rgba(127,255,212,1) 100%);
+    padding: 27px;
+}
+
+.head a{
+    float: left;
+    margin: 0 3px;
+    padding: 5px;
+    color: white;
+    text-shadow: 3px 3px 3px #000;
+    transform: translate(0, -45%);
+}
+
+.navigate a{
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.profile a{
+    float: right;
+}
+
+.content {
+    color: black;
+    text-align: center;
+    font-family: Arial;
+}
+
+.about{
+    padding: 10px;
+    margin: 0px 0px;
+}
+
+.about a{
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 3px;
+    margin: 0 3px;
+    float: right;
+    transform: translate(0%, -50%);
+}
+
+.about t{
+    float: left;
+    margin: 0px 0px;
+    transform: translate(0%, -50%);
 }
